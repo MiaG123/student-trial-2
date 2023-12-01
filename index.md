@@ -5,7 +5,7 @@ title: Student Blog
 
 
 ## __*About Amelia*__
-# <div style="height:100px;" style="background-color:pink;">Hobbies</div>1. 
+# <div style="height:100px;" style="background-color:pink;">Hobbies</div>
 1. I love __playing volleyball__ especial with friends and family. 
 2. I babysit and puppysit for friends. 
 3. __I love to surf__ in the mornings!
