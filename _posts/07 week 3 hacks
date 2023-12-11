@@ -1,0 +1,25 @@
+---
+toc: True
+comments: True
+layout: post
+title: Sample IPYNB w/ table,code
+description: Example!!! This sample shows markdown cell, markdown table, markdown code fencing, and code cells.
+courses: {'compsci': {'week': 3}}
+type: hacks
+---
+
+## hacks
+> Complete the proccess below to create shapes on your website.
+
+## proceder
+
+#steps
+1. Open your reposatory in visual studio code
+2. If you want a generic shape like a squar or cirle you can use codes such as
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+3. If you have a specific shape in mind use this code with a URL to the shape you would like to input
+![Shape](path/to/your/shape.svg)
+an example is 
+&hearts
