@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Sample IPYNB w/ overview
 description: overview of the week
-type: tangible
+type: tangibles
 courses: {compsci: {week: 3}}
 ---
 
