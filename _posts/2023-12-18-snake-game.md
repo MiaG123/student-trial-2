@@ -9,10 +9,6 @@ courses: { compsci: {week: 3} }
 ---
 
 <style>
-
-    <div style="border: 1px solid #ccc; border-radius: 10px; padding: 10px;"> 
-    
-    </div>
    
    body{
     }
@@ -90,7 +86,7 @@ courses: { compsci: {week: 3} }
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
-            <p>Game Over, press <span style="background-color: #FFFFFF; color: #000000">space</span> to try again</p>
+            <p> GAMEOVER, press <span style="background-color: #FFFFFF; color: #FFB6C1">space</span> to try again</p>
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
