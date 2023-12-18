@@ -10,7 +10,11 @@ courses: { compsci: {week: 3} }
 
 <style>
 
-    body{
+    <div style="border: 1px solid #ccc; border-radius: 10px; padding: 10px;"> 
+    
+    </div>
+   
+   body{
     }
     .wrap{
         margin-left: auto;
@@ -105,7 +109,9 @@ courses: { compsci: {week: 3} }
                 <input id="speed3" type="radio" name="speed" value="35"/>
                 <label for="speed3">Fast</label>
                 <input id="speed4" type="radio" name="speed" value="15"/>
-                <lable for="speed4">superspeed</lable>
+                <lable for="speed4">Superspeed</lable>
+                <input id="speed5" typr="radio" name="speed" value="150"/>
+                <lable for="speed5">turtle</lable>
             </p>
             <p>Wall:
                 <input id="wallon" type="radio" name="wall" value="1" checked/>
