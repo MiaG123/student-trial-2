@@ -13,14 +13,14 @@ courses: { compsci: {week: 2} }
     /* calulator output 
       top bar shows the results of the calculator;
       result to take up the entirety of the first row;
-      span defines 4 columns and 1 row
+      span defines 5 columns and 2 row
     */
-    grid-column: span 4;
-    grid-row: span 1;
+    grid-column: span 5;
+    grid-row: span 2;
   
-    padding: 0.25em;
+    padding: 0.50em;
     font-size: 20px;
-    border: 5px white;
+    border: 6px white;
   
     display: flex;
     align-items: center;
@@ -52,8 +52,7 @@ courses: { compsci: {week: 2} }
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
-      <!--row 5-->
-      <div class="calculater-divide">/</div>
+
   </div>
 </div>
 
@@ -130,11 +129,6 @@ courses: { compsci: {week: 2} }
               break;
           case "*":
               result = first * second;
-              break;
-          case "/":
-              result = first / second;
-              break;
-          default: 
               break;
       }
       return result;
