@@ -13,14 +13,14 @@ courses: { compsci: {week: 2} }
     /* calulator output 
       top bar shows the results of the calculator;
       result to take up the entirety of the first row;
-      span defines 5 columns and 2 row
+      span defines 4 columns and 1 row
     */
-    grid-column: span 5;
-    grid-row: span 2;
+    grid-column: span 4;
+    grid-row: span 1;
   
-    padding: 0.50em;
+    padding: 0.25em;
     font-size: 20px;
-    border: 6px white;
+    border: 5px solid black;
   
     display: flex;
     align-items: center;
@@ -52,7 +52,9 @@ courses: { compsci: {week: 2} }
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
-
+      <!--row 5-->
+      <div class="calculator-operation">/</div>
+      <div class="calculator-operation">^</div>
   </div>
 </div>
 
@@ -130,6 +132,14 @@ courses: { compsci: {week: 2} }
           case "*":
               result = first * second;
               break;
+          case "/":
+              result = first / second;
+              break;
+          case "^":
+              result = first ^ second;
+              break;
+          default: 
+              break;
       }
       return result;
   }
@@ -166,11 +176,9 @@ courses: { compsci: {week: 2} }
 <!-- 
 Vanta animations just for fun, load JS onto the page
 -->
-<script src="{{site.baseurl}}/assets/js/three.r119.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/vanta.halo.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/vanta.birds.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/vanta.net.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/vanta.rings.min.js"></script>
+<script src="three.r134.min.js"></script>
+<script src="vanta.birds.min.js"></script>
+<script>
 
 <script>
 // setup vanta scripts as functions
@@ -185,10 +193,21 @@ var vantaInstances = {
 var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
 
 // run the animation
-vantaInstance({
-  el: "#animation",
+VANTA.BIRDS({
+  el: "#your-element-selector",
   mouseControls: true,
   touchControls: true,
-  gyroControls: false
-});
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color1: 0xb4c4ff,
+  color2: 0x20687d,
+  birdSize: 1.30,
+  wingSpan: 19.00,
+  speedLimit: 8.00,
+  separation: 10.00,
+  cohesion: 1.00
+})
 </script>
