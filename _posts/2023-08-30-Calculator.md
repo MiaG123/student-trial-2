@@ -176,9 +176,11 @@ courses: { compsci: {week: 2} }
 <!-- 
 Vanta animations just for fun, load JS onto the page
 -->
-<script src="three.r134.min.js"></script>
-<script src="vanta.birds.min.js"></script>
-<script>
+<script src="{{site.baseurl}}/assets/js/three.r119.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.halo.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.birds.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.net.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.rings.min.js"></script>
 
 <script>
 // setup vanta scripts as functions
@@ -193,8 +195,8 @@ var vantaInstances = {
 var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
 
 // run the animation
-VANTA.BIRDS({
-  el: "#your-element-selector",
+vantaInstance({
+  el: "#animation",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
@@ -202,12 +204,8 @@ VANTA.BIRDS({
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color1: 0xb4c4ff,
-  color2: 0x20687d,
-  birdSize: 1.30,
-  wingSpan: 19.00,
-  speedLimit: 8.00,
-  separation: 10.00,
-  cohesion: 1.00
+  backgroundColor: 0x0,
+  color1: 0x919cf2,
+  color2: 0x2e2e70
 })
 </script>
