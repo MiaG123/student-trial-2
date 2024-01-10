@@ -25,7 +25,10 @@ courses: { compsci: {week: 2} }
     display: flex;
     align-items: center;
   }
+
 </style>
+
+
 
 <!-- Add a container for the animation -->
 <div id="animation">
@@ -138,9 +141,6 @@ courses: { compsci: {week: 2} }
               break;
           case "^":
               result = first ** second;
-              break;
-          case "^":
-              result = fist abs() second;
               break;
           default: 
               break;
