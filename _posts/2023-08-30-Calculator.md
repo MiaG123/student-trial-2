@@ -20,7 +20,7 @@ courses: { compsci: {week: 2} }
   
     padding: 0.25em;
     font-size: 20px;
-    border: 4px light blue;
+    border: 4px blue;
   
     display: flex;
     align-items: center;
@@ -136,7 +136,7 @@ courses: { compsci: {week: 2} }
               result = first / second;
               break;
           case "^":
-              result = first ^ second;
+              result = first ** second;
               break;
           default: 
               break;
@@ -171,6 +171,7 @@ courses: { compsci: {week: 2} }
       output.innerHTML = "0";
       nextReady = true;
   }
+
 </script>
 
 <!-- 
