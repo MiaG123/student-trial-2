@@ -20,18 +20,25 @@ courses: { compsci: {week: 2} }
   
     padding: 0.25em;
     font-size: 20px;
-    border: 4px blue;
+    border: 4px white;
   
     display: flex;
     align-items: center;
     .calculator-number {
-      background-color: light blue /*change background color of number*/
-      color: white;
+      background-color: light blue /*change background color to light blue*/
+      color: black;
+    }
+    
+    .calculator-operation {
+      background-color: white /*set background color to white*/
     }
 
-    .calculator-operation {
-      background-color: white /*change background color of operations*/
-      color: black;
+    .calculator-clear {
+      background-color: light green /*set background color to light green*/
+    }
+
+    .calculator-equals {
+      background-color: pink /*set background color to pink*/
     }
   }
 
