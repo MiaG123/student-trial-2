@@ -24,6 +24,15 @@ courses: { compsci: {week: 2} }
   
     display: flex;
     align-items: center;
+    .calculator-number {
+      background-color: light blue /*change background color of number*/
+      color: white;
+    }
+
+    .calculator-operation {
+      background-color: white /*change background color of operations*/
+      color: black;
+    }
   }
 
 </style>
