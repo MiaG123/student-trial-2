@@ -25,7 +25,7 @@ courses: { compsci: {week: 2} }
     display: flex;
     align-items: center;
     .calculator-number {
-      background-color: light blue /*change background color to light blue*/
+      background-color: blue /*change background color to blue*/
       color: black;
     }
     
@@ -34,7 +34,7 @@ courses: { compsci: {week: 2} }
     }
 
     .calculator-clear {
-      background-color: light green /*set background color to light green*/
+      background-color: green /*set background color to green*/
     }
 
     .calculator-equals {
