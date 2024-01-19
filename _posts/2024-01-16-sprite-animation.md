@@ -1,3 +1,12 @@
+
+toc: True
+comments: True
+layout: post
+title: ssprite sheet animation
+description: Sprite sheet animation of a dog
+courses: {compsci: {week: 3}}
+type: hacks
+
 %%html
 
 <body>
