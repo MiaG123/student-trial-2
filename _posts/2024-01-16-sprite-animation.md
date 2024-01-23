@@ -8,19 +8,24 @@ courses: {compsci: {week: 3}}
 type: hacks
 
 %%html
+<img src="https://img.craftpix.net/2021/07/Free-Street-Animal-Pixel-Art-Asset-Pack5-720x480.webp" alt="Free Street Animal Pixel Art Asset Pack - CraftPix.net"/>
 
 <body>
     <div>
         <canvas id="spriteContainer"> <!-- Within the base div is a canvas. An HTML canvas is used only for graphics. It allows the user to access some basic functions related to the image created on the canvas (including animation) -->
-            <img id="dogSprite" src="/teacher/images/dogSprites.png">  // change sprite here
+            <img id="streetanimals" src="https://img.craftpix.net/2021/07/Free-Street-Animal-Pixel-Art-Asset-Pack5-720x480.webp">  // change sprite here
         </canvas>
         <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
             <input type="radio" name="animation" id="idle" checked>
             <label for="idle">Idle</label><br>
-            <input type="radio" name="animation" id="barking">
-            <label for="barking">Barking</label><br>
-            <input type="radio" name="animation" id="walking">
-            <label for="walking">Walking</label><br>
+            <input type="radio" name="animation" id="running">
+            <label for="running">running</label><br>
+            <input type="radio" name="animation" id="hurt">
+            <label for="hurt">hurt/label><br>
+            <input type="radio" name="animation" id="attack">
+            <label for="attack">attack/label><br>
+            <input type="radio" name="animation" id="death">
+            <label for="death">death/label><br>
         </div>
     </div>
 </body>
@@ -115,6 +120,7 @@ type: hacks
         }
 
         // run 1st animate
-        animate();
+        animate(run animation for dog 1
+        creat the animatin for dog 2 with dage 1);
     });
 </script>
