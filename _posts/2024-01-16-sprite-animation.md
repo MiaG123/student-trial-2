@@ -1,11 +1,12 @@
-
+---
 toc: True
 comments: True
 layout: post
-title: ssprite sheet animation
+title: sprite sheet animation
 description: Sprite sheet animation of a dog
 courses: {compsci: {week: 3}}
 type: hacks
+---
 
 %%html
 <img src="https://img.craftpix.net/2021/07/Free-Street-Animal-Pixel-Art-Asset-Pack5-720x480.webp" alt="Free Street Animal Pixel Art Asset Pack - CraftPix.net"/>
