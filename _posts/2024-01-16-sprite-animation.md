@@ -9,7 +9,6 @@ type: hacks
 ---
 
 %%html
-<img src="https://img.craftpix.net/2021/07/Free-Street-Animal-Pixel-Art-Asset-Pack5-720x480.webp" alt="Free Street Animal Pixel Art Asset Pack - CraftPix.net"/>
 
 <body>
     <div>
@@ -22,11 +21,11 @@ type: hacks
             <input type="radio" name="animation" id="running">
             <label for="running">running</label><br>
             <input type="radio" name="animation" id="hurt">
-            <label for="hurt">hurt/label><br>
+            <label for="hurt">hurt</label><br>
             <input type="radio" name="animation" id="attack">
-            <label for="attack">attack/label><br>
+            <label for="attack">attack</label><br>
             <input type="radio" name="animation" id="death">
-            <label for="death">death/label><br>
+            <label for="death">death</label><br>
         </div>
     </div>
 </body>
