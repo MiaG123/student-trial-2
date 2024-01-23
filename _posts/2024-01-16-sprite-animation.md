@@ -9,11 +9,12 @@ type: hacks
 ---
 
 %%html
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNd8JYT8vw8kUpN2GKpUB9JArvoW-dp856W_-HN0gyo0CHThvVWMx85LI8lCrLoli6AYE:https://openclipart.org/image/2000px/248259&amp;usqp=CAU" alt="Retro Character Sprite Sheet - Openclipart"/>
 
 <body>
     <div>
         <canvas id="spriteContainer"> <!-- Within the base div is a canvas. An HTML canvas is used only for graphics. It allows the user to access some basic functions related to the image created on the canvas (including animation) -->
-            <img id="streetanimals" src="https://img.craftpix.net/2021/07/Free-Street-Animal-Pixel-Art-Asset-Pack5-720x480.webp">  // change sprite here
+            <img id="retro character sprite sheet" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNd8JYT8vw8kUpN2GKpUB9JArvoW-dp856W_-HN0gyo0CHThvVWMx85LI8lCrLoli6AYE:https://openclipart.org/image/2000px/248259&amp;usqp=CAU">  // change sprite here
         </canvas>
         <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
             <input type="radio" name="animation" id="idle" checked>
