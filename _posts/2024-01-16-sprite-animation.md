@@ -7,14 +7,13 @@ description: Sprite sheet animation of a dog
 courses: {compsci: {week: 3}}
 type: hacks
 ---
-
+<img src="https://celclipmaterialprod.s3-ap-northeast-1.amazonaws.com/39/34/2033439/thumbnail?1695643715" alt="32x32 Pixel Dog sprite sheet - CLIP STUDIO ASSETS"/>
 %%html
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNd8JYT8vw8kUpN2GKpUB9JArvoW-dp856W_-HN0gyo0CHThvVWMx85LI8lCrLoli6AYE:https://openclipart.org/image/2000px/248259&amp;usqp=CAU" alt="Retro Character Sprite Sheet - Openclipart"/>
 
 <body>
     <div>
         <canvas id="spriteContainer"> <!-- Within the base div is a canvas. An HTML canvas is used only for graphics. It allows the user to access some basic functions related to the image created on the canvas (including animation) -->
-            <img id="retro character sprite sheet" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNd8JYT8vw8kUpN2GKpUB9JArvoW-dp856W_-HN0gyo0CHThvVWMx85LI8lCrLoli6AYE:https://openclipart.org/image/2000px/248259&amp;usqp=CAU">  // change sprite here
+            <img id="" src="">  // change sprite here
         </canvas>
         <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
             <input type="radio" name="animation" id="idle" checked>
