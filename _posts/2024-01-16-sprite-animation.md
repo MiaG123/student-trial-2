@@ -7,13 +7,11 @@ description: Sprite sheet animation of a dog
 courses: {compsci: {week: 3}}
 type: hacks
 ---
-<img src="https://celclipmaterialprod.s3-ap-northeast-1.amazonaws.com/39/34/2033439/thumbnail?1695643715" alt="32x32 Pixel Dog sprite sheet - CLIP STUDIO ASSETS"/>
-%%html
 
 <body>
     <div>
         <canvas id="spriteContainer"> <!-- Within the base div is a canvas. An HTML canvas is used only for graphics. It allows the user to access some basic functions related to the image created on the canvas (including animation) -->
-            <img id="" src="">  // change sprite here
+            <img id="humansprite" src="{{site.baseurl}}/images/sprite.animation.png">  // change sprite here
         </canvas>
         <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
             <input type="radio" name="animation" id="idle" checked>
