@@ -14,16 +14,14 @@ type: hacks
             <img id="humansprite" src="{{site.baseurl}}/images/sprite.animation.png">  // change sprite here
         </canvas>
         <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
-            <input type="radio" name="animation" id="idle" checked>
-            <label for="idle">Idle</label><br>
-            <input type="radio" name="animation" id="running">
-            <label for="running">running</label><br>
-            <input type="radio" name="animation" id="hurt">
-            <label for="hurt">hurt</label><br>
-            <input type="radio" name="animation" id="attack">
-            <label for="attack">attack</label><br>
-            <input type="radio" name="animation" id="death">
-            <label for="death">death</label><br>
+            <input type="radio" name="animation" id="forward" checked>
+            <label for="forward">forward</label><br>
+            <input type="radio" name="animation" id="left">
+            <label for="left">left</label><br>
+            <input type="radio" name="animation" id="right">
+            <label for="right">right</label><br>
+            <input type="radio" name="animation" id="down">
+            <label for="down">down</label><br>
         </div>
     </div>
 </body>
