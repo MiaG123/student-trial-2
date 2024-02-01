@@ -8,10 +8,38 @@ courses: {compsci: {week: 3}}
 type: hacks
 ---
 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #8CEEED;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: black; /* Set text color to black */
+        }
+
+        #animation-container {
+            position: relative;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
 <body>
     <div>
         <canvas id="spriteContainer"> <!-- Within the base div is a canvas. An HTML canvas is used only for graphics. It allows the user to access some basic functions related to the image created on the canvas (including animation) -->
-            <img id="humansprite" src="![Alt Text](sprite.animation.png)">  // change sprite here
+            <img id="humansprite" src="{{site.baseurl}}/images/sprite.animation.png"> <!--change sprite here-->
         </canvas>
         <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
             <input type="radio" name="animation" id="forward" checked>
