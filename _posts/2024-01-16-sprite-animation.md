@@ -40,12 +40,12 @@ type: hacks
             <img id="humansprite" src="{{site.baseurl}}/images/sprite.animation.png"> <!--change sprite here-->
         </canvas>
         <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
-            <input type="radio" name="animation" id="forward" checked>
-            <label for="forward">forward</label><br>
-            <input type="radio" name="animation" id="left">
-            <label for="left">left</label><br>
-            <input type="radio" name="animation" id="right">
-            <label for="right">right</label><br>
+            <input type="radio" name="animation" id="idle" checked>
+            <label for="idle">forward</label><br>
+            <input type="radio" name="animation" id="barking">
+            <label for="barking">left</label><br>
+            <input type="radio" name="animation" id="walking">
+            <label for="walking">right</label><br>
             <input type="radio" name="animation" id="down">
             <label for="down">down</label><br>
         </div>
@@ -67,7 +67,7 @@ type: hacks
 
         class Dog {
             constructor() {
-                this.image = document.getElementById("sprite.animation.png");
+                this.image = document.getElementById("dogSprite");
                 this.x = 0;
                 this.y = 0;
                 this.minFrame = 0;
@@ -104,23 +104,20 @@ type: hacks
         // dog object
         const dog = new Dog();
 
-        // update frameY of dog object, action from forward, left, right, down radio control
+        // update frameY of dog object, action from idle, bark, walk radio control
         const controls = document.getElementById('controls');
         controls.addEventListener('click', function (event) {
             if (event.target.tagName === 'INPUT') {
                 const selectedAnimation = event.target.id;
                 switch (selectedAnimation) {
-                    case 'forward':
+                    case 'idle':
                         dog.frameY = 0;
                         break;
-                    case 'left':
+                    case 'barking':
                         dog.frameY = 1;
                         break;
-                    case 'right':
+                    case 'walking':
                         dog.frameY = 2;
-                        break;
-                    case 'down':
-                        dog.frameY = 3;
                         break;
                     default:
                         break;
