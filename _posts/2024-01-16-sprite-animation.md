@@ -57,8 +57,8 @@ type: hacks
     window.addEventListener('load', function () {
         const canvas = document.getElementById('spriteContainer');
         const ctx = canvas.getContext('2d');
-        const SPRITE_WIDTH = 160;  // matches sprite pixel width
-        const SPRITE_HEIGHT = 144; // matches sprite pixel height
+        const SPRITE_WIDTH = 137;  // matches sprite pixel width
+        const SPRITE_HEIGHT = 137; // matches sprite pixel height
         const FRAME_LIMIT = 5;  // matches number of frames per sprite row, this code assume each row is same
 
         const SCALE_FACTOR = 2;  // control size of sprite on canvas
