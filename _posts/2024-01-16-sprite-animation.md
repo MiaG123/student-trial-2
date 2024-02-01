@@ -24,11 +24,9 @@ type: hacks
             height: 100vh;
             color: black; /* Set text color to black */
         }
-
         #animation-container {
             position: relative;
         }
-
         canvas {
             display: block;
             margin: 0 auto;
@@ -69,7 +67,7 @@ type: hacks
 
         class Dog {
             constructor() {
-                this.image = document.getElementById("dogSprite");
+                this.image = document.getElementById("sprite.animation.png");
                 this.x = 0;
                 this.y = 0;
                 this.minFrame = 0;
@@ -106,20 +104,23 @@ type: hacks
         // dog object
         const dog = new Dog();
 
-        // update frameY of dog object, action from idle, bark, walk radio control
+        // update frameY of dog object, action from forward, left, right, down radio control
         const controls = document.getElementById('controls');
         controls.addEventListener('click', function (event) {
             if (event.target.tagName === 'INPUT') {
                 const selectedAnimation = event.target.id;
                 switch (selectedAnimation) {
-                    case 'idle':
+                    case 'forward':
                         dog.frameY = 0;
                         break;
-                    case 'barking':
+                    case 'left':
                         dog.frameY = 1;
                         break;
-                    case 'walking':
+                    case 'right':
                         dog.frameY = 2;
+                        break;
+                    case 'down':
+                        dog.frameY = 3;
                         break;
                     default:
                         break;
@@ -144,7 +145,6 @@ type: hacks
         }
 
         // run 1st animate
-        animate(run animation for dog 1
-        creat the animatin for dog 2 with dage 1);
+        animate();
     });
 </script>
