@@ -46,8 +46,8 @@ type: hacks
             <label for="barking">left</label><br>
             <input type="radio" name="animation" id="walking">
             <label for="walking">right</label><br>
-            <input type="radio" name="animation" id="down">
-            <label for="down">down</label><br>
+            <input type="radio" name="animation" id="runing">
+            <label for="runing">down</label><br>
         </div>
     </div>
 </body>
@@ -59,7 +59,7 @@ type: hacks
         const ctx = canvas.getContext('2d');
         const SPRITE_WIDTH = 160;  // matches sprite pixel width
         const SPRITE_HEIGHT = 144; // matches sprite pixel height
-        const FRAME_LIMIT = 48;  // matches number of frames per sprite row, this code assume each row is same
+        const FRAME_LIMIT = 5;  // matches number of frames per sprite row, this code assume each row is same
 
         const SCALE_FACTOR = 2;  // control size of sprite on canvas
         canvas.width = SPRITE_WIDTH * SCALE_FACTOR;
@@ -67,7 +67,7 @@ type: hacks
 
         class Dog {
             constructor() {
-                this.image = document.getElementById("dogSprite");
+                this.image = document.getElementById("humansprite");
                 this.x = 0;
                 this.y = 0;
                 this.minFrame = 0;
@@ -139,7 +139,11 @@ type: hacks
             // Uses `requestAnimationFrame` to synchronize the animation loop with the display's refresh rate,
             // ensuring smooth visuals.
             requestAnimationFrame(animate);
-        }
+             setTimeout(function () {
+            // Use `requestAnimationFrame` to continue the animation loop
+            requestAnimationFrame(animate);
+        }, 500 / 5); // Adjust the divisor to set the desired frames per second
+     }
 
         // run 1st animate
         animate();
