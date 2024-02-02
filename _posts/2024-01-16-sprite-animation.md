@@ -119,7 +119,7 @@ type: hacks
                     case 'walking':
                         dog.frameY = 2;
                         break;
-                    case 'running':
+                    case 'runing':
                         dog.frameY = 3;
                         break;
                     default:
@@ -145,7 +145,7 @@ type: hacks
              setTimeout(function () {
             // Use `requestAnimationFrame` to continue the animation loop
             requestAnimationFrame(animate);
-        }, 700 / 5); // Adjust the divisor to set the desired frames per second
+        }, 400 / 5); // Adjust the divisor to set the desired frames per second
      }
 
         // run 1st animate
