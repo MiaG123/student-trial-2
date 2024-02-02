@@ -145,7 +145,7 @@ type: hacks
              setTimeout(function () {
             // Use `requestAnimationFrame` to continue the animation loop
             requestAnimationFrame(animate);
-        }, 400 / 5); // Adjust the divisor to set the desired frames per second
+        }, 600 / 5); // Adjust the divisor to set the desired frames per second
      }
 
         // run 1st animate
